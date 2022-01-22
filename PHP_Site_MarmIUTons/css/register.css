@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+body {
+  background-image: url("../images/bg.jpg") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background: rgb(17, 0, 0);
+  padding: 25px 30px;
+  border-radius: 10px;
+  opacity: 0.8;
+  transition: all 0.6s ease 0s;
+  text-align: center;
+  margin: 250px auto;
+}
+.container:hover {
+  opacity: 1;
+}
+
+.container .titre {
+  font-size: 35px;
+  font-weight: bold;
+  position: relative;
+}
+.container .titre::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 60px;
+  background: rgba(0, 136, 169, 1);
+}
+.container .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.user-details,
+.input-box,
+span {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.container .user-details .input-box {
+  height: 40px;
+  margin: 20px 0 12px 0;
+  width: calc(100% / 2 - 20px);
+  margin-bottom: 15px;
+}
+.user-details .input-box input {
+  display: block;
+  height: 45px;
+  width: 100%;
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: solid 1px white;
+  padding-left: 15px;
+  font-size: 16px;
+  transition: all 0.3s ease 0s;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: rgba(0, 136, 169, 1);
+}
+.genre {
+  margin-top: 20px;
+}
+.genre .titre-genre {
+  font-size: 20px;
+  font-weight: bold;
+}
+.genre .categorie {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 14px 0;
+}
+.genre .categorie label {
+  display: flex;
+  align-items: center;
+}
+.genre .categorie label input {
+  height: 18px;
+  width: 18px;
+  margin-right: 10px;
+}
+.btnSub {
+  height: 45px;
+  margin: 45px 0;
+}
+.btnSub input {
+  width: 33%;
+  outline: none;
+  background-color: rgba(0, 136, 169, 1);
+  border-radius: 5px;
+  border: none;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease 0s;
+  padding: 15px;
+}
+.btnSub input:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.container a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease 0s;
+}
+.container a:hover {
+  color: rgba(0, 136, 169, 1);
+}
+
+@media (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+  .container .user-details .input-box {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .container .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar {
+    width: 10px;
+  }
+}
+
+.radiolbl {
+  font-size: 2rem;
+  padding: 15px 30px;
+}

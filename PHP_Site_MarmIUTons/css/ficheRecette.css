@@ -1,0 +1,196 @@
+body {
+  background: #efefef !important;
+}
+#second-col {
+  border: none;
+  border-left: 1px solid hsla(200, 10%, 50%, 100);
+  width: 1px;
+}
+.list-group-item {
+  border: 1px solid rgba(0, 0, 0, 0.125) !important;
+}
+.list-group span i {
+  color: #0088a9;
+  margin-right: 4px;
+}
+.list-group strong {
+  color: #0088a9;
+}
+.row .info-recette ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row .info-recette ul li {
+  background: #0088a9;
+  color: #fff;
+  display: block;
+  padding: 5px 10px 2px;
+  margin: 3px;
+  width: auto;
+}
+.wrapper {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.card {
+  background-color: #fff;
+  border: none;
+}
+
+.form-color {
+  background-color: #fafafa;
+}
+
+.form-control {
+  height: 48px;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #35b69f;
+  outline: 0;
+  box-shadow: none;
+  text-indent: 10px;
+}
+
+.c-badge {
+  background-color: #35b69f;
+  color: white;
+  height: 20px;
+  font-size: 11px;
+  width: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.comment-text {
+  font-size: 13px;
+}
+
+.wish {
+  color: #35b69f;
+}
+
+.user-feed {
+  font-size: 14px;
+  margin-top: 12px;
+}
+/*COMMENTS*/
+.user {
+  font-weight: bold;
+  color: black;
+}
+
+.time {
+  color: gray;
+}
+.addReponse a {
+  margin-bottom: 20px;
+}
+
+.userComment {
+  color: #000;
+}
+
+.replies .comment {
+  margin-top: 40px;
+}
+
+.replies {
+  margin-left: 20px;
+}
+
+.star-widget input {
+  display: none;
+}
+.star-widget label {
+  font-size: 30px;
+  color: #444;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background: whitesmoke;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+  color: #fd4;
+}
+input:checked ~ label {
+  color: #fd4;
+}
+
+.drow {
+  background: white;
+  padding: 5px;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.125);
+}
+.who {
+  font-size: 25px;
+  color: #444;
+  padding: 10px;
+  float: left;
+  transition: all 0.2s ease;
+}
+.who h3,
+.who small {
+  display: inline-block;
+}
+.who h3 {
+  font-size: 2.5rem;
+}
+.main {
+  background: white;
+  padding: 5px;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.125);
+}
+.answer {
+  margin-top: 50px;
+  background: white;
+  padding: 5px;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.125);
+}
+.userComments {
+  background: rgb(212, 212, 212);
+  margin-top: 50px;
+  margin-bottom: 25px;
+  position: relative;
+}
+.repondre a {
+  color: blue;
+}
+.trash,
+.edit {
+  font-size: 1.5rem;
+  color: blue;
+  transition: 0.5s ease-in-out;
+  float: right;
+}
+.trash:hover {
+  transform: scale(0.95);
+}
+.edit:hover {
+  transform: scale(0.95);
+}
+.after-h3 {
+  position: relative;
+}
+.after-h3::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  height: 5px;
+  border-radius: 2px;
+  background: linear-gradient(111.3deg, #083d7a 9.6%, #3eadcf 93.6%);
+}
+@media (max-width: 600px) {
+  .who {
+    display: block;
+    width: 100%;
+  }
+}

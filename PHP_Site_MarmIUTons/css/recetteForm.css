@@ -1,0 +1,573 @@
+/*-----DEBUT PANEL-----*/
+.wrapper {
+  margin-bottom: 500px;
+}
+#mb {
+  margin-top: 100px;
+}
+#container-tab-form {
+  border-radius: 25px 25px 0 0;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0px 0px 10px rgba(110, 110, 110, 0.473);
+  background: #0088a9;
+}
+#over-ul-boot .nav-link.active {
+  background-color: #0088a9;
+  color: white;
+  height: 100%;
+  box-shadow: 0px 5px 15px rgba(116, 116, 141, 0.699);
+  border: none;
+}
+#over-ul-boot .nav-link {
+  color: #333;
+}
+#over-ul-boot .nav-link i {
+  color: #0088a9;
+}
+#over-ul-boot .nav-link.active i {
+  color: white;
+}
+
+#over-ul-boot .nav-item {
+  background-color: rgb(212, 216, 226);
+}
+#over-ul-boot .nav-item a {
+  height: 100%;
+}
+#container-tab-form {
+  background-color: white;
+}
+#body-pnl {
+  box-shadow: 0px 0px 15px rgba(116, 116, 141, 0.699);
+}
+#header-pnl {
+  border-radius: 25px 25px 0 0;
+}
+.h2 {
+  font-weight: 700;
+}
+.h3 {
+  font-weight: 500;
+  position: relative;
+}
+.h3::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  height: 3px;
+  border-radius: 4px;
+  background: linear-gradient(110.3deg, #083d7a 9.6%, #3eadcf 93.6%);
+}
+.h1 {
+  color: #0088a9;
+}
+#Photos .pictures .h5 {
+  margin-bottom: 60px;
+}
+#Photos .pictures .h5 input {
+  justify-content: center;
+}
+@media (max-width: 1235px) {
+  .footer-right h3:before {
+    content: "";
+    width: 180px;
+  }
+}
+.col .row .grp-time .input-group-text {
+  background: #0088a9 !important;
+  color: white !important;
+  font-weight: 500;
+  border: 1px solid #0088a9 !important;
+}
+/*----FIN PANEL----*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+body {
+  background: #efefef !important;
+}
+.wrapper form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.errorBox {
+  color: red;
+  border: 1px solid red;
+  padding: 5px;
+  list-style-type: none;
+  margin: 2px 0;
+}
+.recette {
+  width: 100%;
+}
+.nom-recette {
+  width: 100%;
+  border-radius: 15px;
+  padding: 10px;
+}
+form .head {
+  width: 80%;
+  margin: 0 120px;
+  margin-top: 200px;
+  margin-bottom: 5px;
+  padding: 15px;
+  background: white;
+  border-radius: 15px;
+  letter-spacing: 0.1rem;
+  background: #081555;
+  color: white;
+}
+.recette-details {
+  display: flex;
+  margin: 0 120px;
+  width: 80%;
+  padding: 15px;
+  background: white;
+  border-radius: 15px;
+  flex-wrap: wrap;
+}
+.input-box {
+  display: block;
+  margin-bottom: 15px;
+}
+.details {
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+  display: block;
+}
+.explain-box,
+.ingredient_ustensile {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 2px;
+  padding: 15px;
+  background: white;
+  border-radius: 15px;
+  flex-direction: column;
+}
+
+.grid-temps {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+}
+
+.tagBtn,
+.categorie-plat {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  background: rgba(0, 136, 169, 0.3);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.22);
+  border: none;
+  cursor: pointer;
+  padding: 25px;
+  width: 200px;
+  text-align: center;
+  margin-top: 15px;
+  border-radius: 10px;
+  margin: 5px;
+  min-width: 200px;
+  outline: none;
+}
+.tagBtn:hover,
+.categorie-plat:hover {
+  opacity: 0.7;
+}
+.tagBtn.active,
+.categorie-plat.active {
+  background: rgba(0, 136, 169, 1);
+  color: white;
+}
+.grid .input-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.grid .input-box h2 {
+  display: flex;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  background: #081555;
+  color: white;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  #break-time-col {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*IMAGE*/
+
+.pictures label img {
+  border: 1px dashed blue;
+  object-fit: contain;
+  max-width: 200px;
+  min-width: 200px;
+  max-height: 200px;
+  min-height: 200px;
+}
+.pictures input {
+  display: none;
+  visibility: none;
+}
+/*DIFFICULTE*/
+.difficulte {
+  margin-top: 50px;
+}
+.difficulte .categorie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*INGREDIENT*/
+#mesUstensiles,
+#mesIngredients {
+  margin-top: 25px;
+  text-align: center;
+  position: relative;
+}
+#mesUstensiles::before,
+#mesIngredients::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  height: 3px;
+  border-radius: 4px;
+  background: linear-gradient(110.3deg, #083d7a 9.6%, #3eadcf 93.6%);
+}
+
+.nav-noboot ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  background: white;
+  margin: 40px 0;
+}
+.nav-noboot ul li {
+  padding: 10px;
+  width: 100%;
+  color: #333;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 200;
+  transition: all 0.6s ease-in-out;
+  font-size: 1.7rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 430px) {
+  .nav-noboot ul li {
+    font-size: 1.2rem;
+  }
+}
+
+.nav-noboot ul li.active,
+.nav-noboot ul li:hover {
+  box-shadow: 0px -3px 0px rgba(3, 47, 58, 0.9) inset;
+  background-color: rgba(0, 136, 169, 0.9);
+  color: whitesmoke;
+}
+.ustensile {
+  border-radius: 0px 50px 50px 0px;
+}
+.ingredient {
+  border-radius: 50px 0 0 50px;
+}
+.ustensile.active,
+.ustensile:hover {
+  border-left: 1px solid rgba(0, 136, 169, 1);
+  border-radius: 0px 50px 50px 0px;
+}
+.ingredient.active,
+.ingredient:hover {
+  border-left: 1px solid rgba(0, 136, 169, 1);
+  border-radius: 50px 0 0 50px;
+}
+
+.tab {
+  display: none;
+}
+#ingList,
+#ustList {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#ingList li,
+#ustList li {
+  list-style-type: none;
+  color: black;
+  border-bottom: 1px solid #0088a9;
+  line-height: 35px;
+}
+#ingList li button,
+#ustList li button {
+  color: white;
+  background: red;
+  cursor: pointer;
+  float: right;
+}
+.grpBoxIng {
+  border: 2px solid silver;
+  padding: 60px;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.392);
+  border-radius: 15px;
+}
+.input-ing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 40px;
+}
+.qte,
+#typeM {
+  height: 100%;
+}
+#typeM {
+  color: white;
+  background: #0088a9;
+}
+.searchIng #searchIng {
+  width: 500px;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 3px;
+  border: none;
+  border-bottom: 2px solid #0088a9;
+  margin: 0 auto;
+  height: 100%;
+}
+#searchIng_chosen,
+#searchUst_chosen {
+  width: 300px !important;
+}
+@media (max-width: 800px) {
+  .searchIng #searchIng {
+    width: 100%;
+  }
+}
+.active-result {
+  color: black;
+}
+
+.btn-ing {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.btn-ing input {
+  padding: 20px 40px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  border: none;
+  outline: none;
+  background: orangered;
+  color: white;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+}
+.btn-ing input:hover {
+  opacity: 0.6;
+}
+
+.ingredient_ustensile h2 {
+  margin-bottom: 15px;
+  display: flex;
+  background: #081555;
+  color: white;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.ingredient_ustensile h5 {
+  margin: 15px 0;
+  text-align: center;
+}
+.ingredient-box .label {
+  display: block;
+}
+.affichage-ing {
+  display: flex;
+  justify-content: center;
+}
+.affichage-ing label {
+  display: block;
+  margin: 15px 0;
+}
+.affichage-ing textarea {
+  width: 80%;
+  height: 12rem;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  padding: 25px;
+  resize: none;
+}
+.grid .input-box p {
+  margin: 0 0 15px 0;
+}
+/*Explication*/
+.btnEtape {
+  padding: 11px;
+  font-size: 1.4rem;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  background: rgba(0, 136, 169, 1);
+  color: white;
+  cursor: pointer;
+}
+#etape-box i {
+  position: absolute;
+  font-size: 26px;
+  color: rgb(114, 5, 5);
+  cursor: pointer;
+}
+
+.explain-box {
+  align-content: center;
+}
+.explain-box label {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.explain-box .nomEtape {
+  line-height: 2rem;
+  font-size: 1.3rem;
+  margin: 15px 0;
+  width: 500px;
+}
+.explain-box h2 {
+  margin-bottom: 15px;
+  display: flex;
+  background: #081555;
+  color: white;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.box-explain,
+#box-explain {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  padding: 25px;
+  resize: none;
+}
+textarea::-webkit-scrollbar {
+  width: 0em;
+}
+
+/*Button*/
+.buttonSub {
+  display: flex;
+  justify-content: center;
+}
+.buttonSub input {
+  outline: none;
+  padding: 25px;
+  width: 250px;
+  margin: 25px 0;
+  border-radius: 15px;
+  background: rgba(0, 136, 169, 1);
+  border: none;
+  align-items: center;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.buttonSub input:hover {
+  opacity: 0.7;
+  background: rgb(8, 169, 0);
+}
+
+/*Design des input*/
+input[type="text"],
+input[type="number"] {
+  border: none;
+  border-radius: 0px;
+  border-bottom: 2px solid #0088a9;
+  background: rgb(241, 241, 242);
+  outline: none;
+}
+
+#radio1,
+#radio2,
+#radio3 {
+  padding: 25px;
+}
+
+.radiolbl {
+  display: inline-block;
+  padding: 1em 2em;
+  cursor: pointer;
+  color: black;
+  background: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.22);
+  transition: 0.3s;
+  user-select: none;
+}
+.radiolbl:hover {
+  opacity: 0.7;
+}
+#radio1:checked + .radiolbl {
+  background: green;
+  color: white;
+}
+#radio2:checked + .radiolbl {
+  background: orange;
+  color: white;
+}
+#radio3:checked + .radiolbl {
+  background: orangered;
+  color: white;
+}
+.hidden {
+  display: none;
+}
+.input-box .temps {
+  width: 50px;
+  height: 1.7rem;
+  text-align: right;
+}
+.customDanger {
+  color: #0088a9;
+  font-weight: 500;
+}
+
+.radiolbl {
+  font-size: 2rem;
+  padding: 15px 30px;
+}
+
+#img-up1, #img-up2, #img-up3{
+  height: 200px;
+  width: 200px;
+}

@@ -1,0 +1,441 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  overflow-x: hidden;
+  background: #efefef !important;
+}
+.main-container {
+  padding-top: 200px;
+  margin: 0 100px;
+  margin-bottom: 800px;
+}
+.head {
+  background: white;
+  width: 100%;
+  display: flex;
+  height: 190px;
+  position: relative;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+}
+.pic {
+  float: left;
+  width: 340px;
+  height: 200px;
+  transition: all 0.5s ease-in-out;
+}
+.pic img {
+  border-radius: 50%;
+  height: 230px;
+  width: 230px;
+  border: 4px solid white;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 50px;
+  top: 20px;
+  z-index: 5;
+  background: white;
+}
+#submit-pic {
+  position: absolute;
+  left: 125px;
+  top: 190px;
+  z-index: 6;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 12px;
+}
+.pic:hover .addPic #submit-pic {
+  display: block;
+  visibility: visible;
+}
+
+.nav-info {
+  float: left;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 60px;
+}
+.nav-info h3 {
+  font-variant: small-caps;
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+@media (max-width: 800px) {
+  .hide640 {
+    display: none;
+  }
+  .tab-recette {
+    font-size: 16px;
+  }
+  .hide {
+    display: none;
+  }
+}
+@media (max-width: 540px) {
+  .hide640 {
+    display: none;
+  }
+  th,
+  td {
+    font-size: 12px;
+  }
+}
+.option {
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 136, 169, 1);
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+  outline: none;
+}
+.option:hover {
+  background: white;
+  border: 1px solid rgba(0, 136, 169, 1);
+}
+.option .notif i {
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.6s ease-in-out;
+}
+.option:hover .notif i {
+  color: rgba(0, 136, 169, 1);
+}
+.main-body {
+  width: 100%;
+  display: flex;
+  padding-right: 15px;
+}
+.profile-s {
+  width: 300px;
+  background: white;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  padding: 90px 30px 20px;
+  margin-left: 10px;
+  z-index: 50;
+}
+.profile-s p {
+  margin-bottom: 7px;
+  color: #333;
+  font-size: 14px;
+}
+.comu-btn {
+  display: flex;
+}
+button.creer {
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 3px;
+  background: rgba(0, 136, 169, 1);
+  font-size: 1rem;
+  margin: 5px 2px;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.3);
+}
+.creer a {
+  color: white;
+  text-decoration: none;
+}
+button.creer:hover {
+  opacity: 0.7;
+}
+button.creer i {
+  margin-right: 5px;
+  color: white;
+}
+.user-note {
+  display: flex;
+}
+.user-note h3 {
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin-right: 5px;
+  letter-spacing: 1px;
+  color: #666;
+}
+.user-note .reviews {
+  font-size: 0.9rem;
+}
+.rate {
+  padding-top: 6px;
+}
+.rate i {
+  font-size: 0.9rem;
+  color: rgba(0, 136, 169, 1);
+}
+
+.commande-admin {
+  width: 300px;
+  background: white;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px 0;
+  margin-left: 10px;
+  margin-top: 5px;
+  z-index: 50;
+  text-align: center;
+}
+
+.navd {
+  width: 100%;
+  z-index: -1;
+}
+.navd ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  height: 40px;
+  background: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.navd ul li {
+  padding: 10px;
+  width: 100%;
+  color: #333;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 200;
+  transition: all 0.6s ease-in-out;
+}
+.navd ul li.active,
+.navd ul li:hover {
+  box-shadow: 0px -3px 0px rgba(0, 136, 169, 0.9) inset;
+}
+.pr-body {
+  width: 100%;
+  z-index: -1;
+}
+.tab-bootless {
+  padding: 20px;
+  width: 100%;
+  display: none;
+}
+.tab-bootless .titre-s {
+  text-align: center;
+}
+#bio-plus {
+  color: blue;
+  cursor: pointer;
+  text-transform: lowercase;
+}
+#bio-moins {
+  color: blue;
+  cursor: pointer;
+  text-transform: lowercase;
+}
+.right-col {
+  width: 100%;
+}
+/* Tableau des recettes */
+.tab-recettes {
+  width: 100%;
+  margin-top: 25px;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.shadow {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.tab-recettes thead tr {
+  background-color: #010724;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
+.tab-recettes th,
+.tab-recettes td {
+  padding: 12px 15px;
+}
+
+.tab-recettes tbody tr {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+}
+
+.tab-recettes tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+.tab-recettes tbody tr a {
+  color: black;
+  transition: 0.3s;
+}
+.tab-recettes tbody tr a:hover {
+  color: rgba(0, 136, 169, 0.9);
+}
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .profile-s,
+  .commande-admin {
+    width: 250px;
+    padding: 90px 15px 20px;
+  }
+  .pic img {
+    height: 200px;
+    width: 200px;
+    left: 50px;
+    top: 50px;
+  }
+}
+@media (max-width: 900px) {
+  body {
+    margin: 0 20px;
+  }
+  .head {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .pic {
+    float: left;
+    width: 100%;
+    height: 200px;
+  }
+  .pic img {
+    position: relative;
+    left: 0;
+  }
+  .navd {
+    text-align: center;
+  }
+  .option {
+    right: 20px;
+    top: 75%;
+    transform: translateY(50%);
+  }
+  .main-body {
+    flex-direction: column;
+    padding-right: 0px;
+  }
+  .profile-s,
+  .commande-admin {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin: 5px 0px;
+  }
+  .user-note {
+    justify-content: center;
+  }
+}
+@media (max-width: 580px) {
+  .option {
+    display: none;
+  }
+  .navd ul li {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    margin: 0;
+  }
+  .head h3 {
+    font-size: 1.2rem;
+  }
+  .option {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 15px;
+    top: 83%;
+  }
+  .option .notif {
+    top: -3px;
+    right: -4px;
+    padding-right: 4px;
+    height: 15px;
+    width: 15px;
+    font-size: 0.7rem;
+  }
+}
+
+.avis-box {
+  box-sizing: border-box;
+  box-shadow: 2px 2px 5px;
+  width: 100%;
+  border-radius: 10px;
+  border: lightgrey;
+  padding: 10px;
+  background-color: white;
+}
+
+.nomPrenomAvis {
+  font-size: 13px;
+  color: #0f1111;
+  font-family: Arial, sans-serif;
+}
+
+.nomRecetteAvis {
+  color: grey;
+  font-size: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.noteAvis {
+  color: gold;
+}
+
+.textCommentaire {
+  font-family: Arial, sans-serif;
+}
+/*Modal*/
+.input-group-text {
+  width: 40%;
+}
+/**Modal scrollbar*/
+.modal-dialog {
+  overflow-y: initial !important;
+}
+.modal-body {
+  height: 80vh;
+  overflow-y: auto;
+}
+.srch-U {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1000px) {
+  .modal-content {
+    width: 120% !important;
+  }
+}
+@media (max-width: 700px) {
+  .tab-recettes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main-container {
+    margin: 0;
+  }
+}
+@media (max-width: 400px) {
+  .pic img {
+    height: 100px;
+    width: 100px;
+  }
+}
